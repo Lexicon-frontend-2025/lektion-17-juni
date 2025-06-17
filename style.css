@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    margin: 0 auto;
+}
+#emailHelp {
+    visibility: hidden;
+}
+form button {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.2rem 1rem;
+    border-radius: 100px;
+}

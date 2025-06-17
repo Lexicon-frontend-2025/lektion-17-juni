@@ -9,7 +9,9 @@
 </head>
 
 <body>
-    <header>Formulärdags</header>
+    <header>
+        <h1>Formulärdags</h1>
+    </header>
     <main>
         <form>
             <!-- fritext -->
@@ -40,12 +42,16 @@
                 </label>
             </fieldset>
             <!-- range -->
-             <label for="volym">Volym</label>
-             1
-             <input type="range" name="range" id="range" min="0" max="10" value="2"> 10
+            <label for="volym">Volym</label>
+            <div>
+                1
+                <input type="range" name="range" id="range" min="0" max="10" value="2">
+                10
+            </div>
             <!-- email -->
             <label for="email">E-post</label>
-            <input placeholder="namn@email.co.uk" type="email" id="email" name="email" required aria-describedby="emailHelp"/>
+            <input placeholder="namn@email.co.uk" type="email" id="email" name="email" required
+                aria-describedby="emailHelp" />
             <p id="emailHelp">Ange din e-postadress, t.ex. namn@email.co.uk</p>
             <!-- submit button -->
             <button type="submit">Skicka</button>
