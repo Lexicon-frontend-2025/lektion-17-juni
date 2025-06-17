@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>Formulärdags</header>
+    <main>
+        <form>
+            <!-- fritext -->
+            <label for="name">Namn</label>
+            <input type="text" id="name" />
+            <!-- lösenord -->
+            <label for="password">Lösenord</label>
+            <input type="password" id="password" minlength="8" required />
+            <!-- nummer -->
+            <label for="age">Ålder</label>
+            <input type="number" name="age" id="age" min="0" max="130">
+            <!-- datum -->
+            <label for="birthday">Födelsedag</label>
+            <input type="date" name="birthday" id="birthday" min="2025-01-01" max="2025-12-31">
+            <!-- checkbox -->
+            <!-- <label for="available">Tillgänglig</label>
+                <input type="checkbox" name="available" id="available"> -->
+            <fieldset>
+                <legend>Kost</legend>
+                <!-- radio -->
+                <label for="card">
+                    <input type="radio" name="payment" id="card">
+                    Vego
+                </label>
+                <label for="swish">
+                    <input type="radio" name="payment" id="swish">
+                    Allt
+                </label>
+            </fieldset>
+            <!-- range -->
+             <label for="volym">Volym</label>
+             1
+             <input type="range" name="range" id="range" min="0" max="10" value="2"> 10
+            <!-- email -->
+            <label for="email">E-post</label>
+            <input placeholder="namn@email.co.uk" type="email" id="email" name="email" required aria-describedby="emailHelp"/>
+            <p id="emailHelp">Ange din e-postadress, t.ex. namn@email.co.uk</p>
+            <!-- submit button -->
+            <button type="submit">Skicka</button>
+        </form>
+    </main>
+
+</body>
+
+</html>
